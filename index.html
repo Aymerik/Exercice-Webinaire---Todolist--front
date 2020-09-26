@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>// Todo List</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <div id="overlay"></div>
+            <button id="add-task">Ajouter une tâche</button>
+            <div class="popup">
+                <p><label for="new-task">Nouvelle tâche</label><input id="new-task" type="text" placeholder="Tâche"><br><textarea id="text-task" placeholder="Description (optionnel)"></textarea><br><button>Ajouter</button></p>
+            </div>
+            <h3>À faire</h3>
+            <ul id="incomplete-tasks">
+            </ul>
+            <h3>Fait</h3>
+            <ul id="completed-tasks">
+            </ul>
+        </div>
+        <div class="popup-task">
+            <h3 id="task-name"></h3>
+            <p>Statut : <strong id="task-status"></strong></p>
+            <p>Créée le : <strong id="task-date"></strong></p>
+            <p>Description : <strong id="task-description"></strong></p>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
